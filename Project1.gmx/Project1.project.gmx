@@ -1234,6 +1234,7 @@
       <object>objects\oBat</object>
       <object>objects\oScarab</object>
       <object>objects\oSnake</object>
+      <object>objects\oSnakeB</object>
       <object>objects\oSpider</object>
       <object>objects\oSpiderHang</object>
       <object>objects\oGiantSpiderHang</object>

@@ -65,7 +65,8 @@ RIGHT = 1;
 facing = RIGHT;
 
 shakeCounter = 0;
-shakeToggle = 1;</string>
+shakeToggle = 1;
+</string>
           </argument>
         </arguments>
       </action>
@@ -123,6 +124,12 @@ if (hp &lt; 1)
         global.snakes += 1;
         global.kills += 1;
     }
+    
+    var a, b;
+    a = instance_create(x,y+8,oSnakeB);
+    b = instance_create(x+8,y+8,oSnakeB);
+    a.facing = LEFT;
+    b.facing = RIGHT;
     instance_destroy();
 }
 
@@ -195,7 +202,8 @@ if (status != STUNNED and facing == RIGHT)
     sprite_index = sSnakeWalkR;
 }
 */
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>
