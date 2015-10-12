@@ -212,6 +212,33 @@ if (status &lt; STUNNED and status != THROW)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="oWhip">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (not whipped)
+{
+    playSound(global.sndHit);
+    whipped = true;
+    alarm[0] = 10;
+}</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="oBomb">
       <action>
         <libid>1</libid>
@@ -246,33 +273,6 @@ if (other.y &lt; y) other.yVel = -rand(2,4);
 if (other.held)
 {
     if (oCharacter) oCharacter.holdItem = 0;
-}</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="oWhip">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if (not whipped)
-{
-    playSound(global.sndHit);
-    whipped = true;
-    alarm[0] = 10;
 }</string>
           </argument>
         </arguments>
