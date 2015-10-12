@@ -130,7 +130,8 @@ playSound(global.sndGiantSpider);</string>
             xVel = 2.5;
         }
     }
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -281,7 +282,8 @@ if (isCollisionLeft(1) or isCollisionRight(1))
 
 //if (isCollisionSolid())
 //  y -= 2;
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>

@@ -60,7 +60,8 @@ status = 0;
 bounceCounter = 0;
 
 shakeCounter = 0;
-shakeToggle = 1;</string>
+shakeToggle = 1;
+</string>
           </argument>
         </arguments>
       </action>
@@ -104,7 +105,8 @@ else if (not collision_point(x, y-16, oSolid, 0, 0) or (dist &lt; 90 and oCharac
   spider.hp = hp;
   instance_destroy();
 }
-}</string>
+}
+</string>
           </argument>
         </arguments>
       </action>
